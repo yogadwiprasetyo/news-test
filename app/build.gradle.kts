@@ -46,6 +46,7 @@ android {
 
 dependencies {
     val pagingVersion = "3.2.1"
+    val viewPagerVersion = "1.0.0"
     val koinAndroidVersion = "3.5.3"
     val lifecycleVersion = "2.6.2"
     val roomVersion = "2.6.1"
@@ -55,6 +56,7 @@ dependencies {
     val okhttp3VersionBom = "4.12.0"
     val glideVersion = "4.16.0"
 
+    // Default
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
@@ -62,6 +64,8 @@ dependencies {
 
     // Paging3
     implementation("androidx.paging:paging-runtime-ktx:$pagingVersion")
+    // ViewPager2
+    implementation("androidx.viewpager2:viewpager2:$viewPagerVersion")
 
     // Koin
     implementation("io.insert-koin:koin-android:$koinAndroidVersion")
