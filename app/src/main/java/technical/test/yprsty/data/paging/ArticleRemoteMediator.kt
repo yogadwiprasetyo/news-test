@@ -5,6 +5,7 @@ import androidx.paging.LoadType
 import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
 import androidx.room.withTransaction
+import technical.test.yprsty.BuildConfig
 import technical.test.yprsty.data.source.locale.entity.LocaleArticle
 import technical.test.yprsty.data.source.locale.entity.LocaleRemoteKeys
 import technical.test.yprsty.data.source.locale.room.NewsDatabase
@@ -15,7 +16,7 @@ import technical.test.yprsty.utils.toLocal
 class ArticleRemoteMediator(
     private val database: NewsDatabase,
     private val apiService: ApiService,
-    private val country: String = "id",
+    private val country: String = "us",
     private val category: String = "",
     private val query: String = ""
 ) : RemoteMediator<Int, LocaleArticle>() {
@@ -50,7 +51,7 @@ class ArticleRemoteMediator(
         }
 
         try {
-            val apiKey = "" // TODO: Get API Key from BuildConfig.apiKey
+            val apiKey = BuildConfig.ApiKey
             val response = apiService.getTopHeadlines(
                 apiKey = apiKey,
                 page = page,

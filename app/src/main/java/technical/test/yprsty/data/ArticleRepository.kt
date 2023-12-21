@@ -30,7 +30,7 @@ class ArticleRepository(
         query: String
     ): Flow<PagingData<Article>> = Pager(
         config = PagingConfig(
-            pageSize = 10
+            pageSize = 5
         ),
         remoteMediator = ArticleRemoteMediator(
             newsDatabase,

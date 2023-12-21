@@ -37,20 +37,24 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
+        android:ellipsize="end"
+        android:lines="1"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_publish_at"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_tile"
-        tools:text="BBC News" />
+        tools:text="BBC News BBC News BBC News" />
 
     <TextView
         android:id="@+id/tv_publish_at"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:layout_constraintStart_toEndOf="@id/tv_author"
+        app:layout_constraintEnd_toStartOf="@id/iv_article"
         app:layout_constraintTop_toTopOf="@id/tv_author"
-        tools:text="5 jam lalu" />
+        tools:text="23 November 2023 13:54" />
 </androidx.constraintlayout.widget.ConstraintLayout>

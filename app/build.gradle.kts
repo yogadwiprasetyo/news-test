@@ -36,7 +36,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
-        freeCompilerArgs += listOf("-Xopt-in=kotlin.RequiresOptIn")
+        freeCompilerArgs += listOf("-opt-in=kotlin.RequiresOptIn")
     }
     buildFeatures {
         buildConfig = true
@@ -54,7 +54,7 @@ dependencies {
 
     val retrofitVersion = "2.9.0"
     val okhttp3VersionBom = "4.12.0"
-    val glideVersion = "4.16.0"
+    val coilVersion = "2.5.0"
 
     // Default
     implementation("androidx.core:core-ktx:1.12.0")
@@ -93,10 +93,14 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp")
     implementation("com.squareup.okhttp3:logging-interceptor")
 
-    // Glide
-    implementation("com.github.bumptech.glide:glide:$glideVersion")
+    // Coil
+    implementation("io.coil-kt:coil:$coilVersion")
 
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    testImplementation("androidx.arch.core:core-testing:2.2.0")
+    testImplementation("org.mockito:mockito-core:5.8.0")
+    testImplementation("org.mockito:mockito-inline:4.11.0")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }

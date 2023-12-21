@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import technical.test.yprsty.databinding.ActivityArticlesBinding
+import technical.test.yprsty.presentation.articles.adapter.ArticlesPagerAdapter
 import technical.test.yprsty.utils.categories
 
 class ArticlesActivity : AppCompatActivity() {

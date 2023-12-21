@@ -11,7 +11,7 @@ interface ApiService {
         @Query("apiKey") apiKey: String,
         @Query("page") page: Int,
         @Query("pageSize") pageSize: Int,
-        @Query("country") country: String = "id",
+        @Query("country") country: String = "us",
         @Query("category") category: String = "",
         @Query("q") query: String = "",
     ): NetworkResponse

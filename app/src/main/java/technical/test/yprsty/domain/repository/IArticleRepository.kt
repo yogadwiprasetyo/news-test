@@ -6,7 +6,7 @@ import technical.test.yprsty.domain.model.Article
 
 interface IArticleRepository {
     fun getArticlesPaging(
-        country: String = "id",
+        country: String = "us",
         category: String = "",
         query: String = ""
     ): Flow<PagingData<Article>>
