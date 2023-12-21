@@ -17,4 +17,7 @@ Libraries:
 - Testing (Junit4, Mockito)
 
 Screenshots:
-![alt text](https://github.com/yogadwiprasetyo/news-test/blob/main/image.jpg?raw=true)
+<img src="https://github.com/yogadwiprasetyo/news-test/blob/main/screenshots/Screenshot-1.png" width="180"/>
+<img src="https://github.com/yogadwiprasetyo/news-test/blob/main/screenshots/Screenshot-2.png" width="180"/>
+<img src="https://github.com/yogadwiprasetyo/news-test/blob/main/screenshots/Screenshot-3.png" width="180"/>
+<img src="https://github.com/yogadwiprasetyo/news-test/blob/main/screenshots/Screenshot-4.png" width="180"/>
